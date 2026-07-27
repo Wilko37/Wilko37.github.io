@@ -36,4 +36,11 @@ p {
     min-height: calc(100vh - 32px);
     border-radius: 16px;
     background-image: linear-gradient(to bottom, #F2EFE6, #ECE1D1, #E2D3C2);
+
+    padding-top: 64px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
 }
