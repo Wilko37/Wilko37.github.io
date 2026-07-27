@@ -3,6 +3,7 @@
 }
 
 body {
+  margin: 0;
   min-height: 100vh;
   background-color: #202A31;
   cursor: url(https://cyberstar-demo.neocities.org/images/grass_cursor.png), auto;
