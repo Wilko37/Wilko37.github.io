@@ -43,4 +43,13 @@ p {
 .logo {
     display: block;
     margin: 0 auto;
+    height: auto;
+    width: 360px;
+}
+
+@media (max-width: 767px){
+  .logo {
+    width: 240px;
+  }
+
 }
