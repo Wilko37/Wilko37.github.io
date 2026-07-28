@@ -9,6 +9,13 @@ body {
   padding: 16px;
   }
 
+hr {
+  max-width: 448px;
+  width: 100%;
+  margin: 0 auto;
+  color: #D9D9D9;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
@@ -29,6 +36,7 @@ h3{
   text-align: center;
   letter-spacing: 0.1em;
   color: #F4EEE7;
+  margin: 0 0 8px;
 }
 
 p {
@@ -116,7 +124,14 @@ p {
   height: auto;
 
   flex-direction: column;
+  gap: 28px;
   padding: 40px;
+}
+
+.home-audio-visual{
+  width: 100%;
+  max-width: 496px;
+  height: auto;
 }
 
 .vent-grill{
@@ -189,5 +204,5 @@ p {
     grid-row: 2;
     justify-self: center;
   }
-  
+
 }
