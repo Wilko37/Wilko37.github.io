@@ -27,7 +27,7 @@ h3{
   font-weight: 500;
   font-style: normal;
   text-align: center;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.1em;
   color: #F4EEE7;
 }
 
@@ -91,10 +91,38 @@ p {
   height: 80px;
 }
 
+.home-middle-section{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  /*allows all columns to shrink when needed*/
+  grid-template-columns:
+    minmax(60px, 144px)
+    minmax(0, 712px)
+    minmax(60px, 144px);
+
+  /*allows gaps to shrink if needed*/
+  gap: clamp(16px, 5vw, 100px);
+
+  width: 100%;
+  max-width: 1080px;
+}
+
 .display-panel-main{
-  width: 712px;
-  height: 376px;
+  width: 100%; /*712px as defined in home-middle-section*/
+  max-width: 712px;
+
+  min-height: 376px;
+  height: auto;
+
   flex-direction: column;
+  padding: 40px;
+}
+
+.vent-grill{
+  width:144px;
+  max-width: 100%;
+  height: auto;
 }
 
 .bottom-panel{
