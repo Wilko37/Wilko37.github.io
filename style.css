@@ -6,7 +6,6 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: #202A31;
-  cursor: url(https://cyberstar-demo.neocities.org/images/grass_cursor.png), auto;
   padding: 16px;
   }
 
@@ -44,9 +43,11 @@ p {
 }
 
 .bottom-panel{
+  display: flex;
   height: 56px;
   background: #6A6461;
   margin-top: auto;
+  align-items: center;
 }
 
 .logo {
@@ -54,6 +55,19 @@ p {
     margin: 0 auto;
     height: auto;
     width: 360px;
+}
+
+.screw-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.screw {
+  width: 32px;
+  height: auto;
 }
 
 @media (max-width: 767px){
