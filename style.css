@@ -20,6 +20,17 @@ h1 {
   color: #F4EEE7;
 }
 
+h3{
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.25em;
+  color: #F4EEE7;
+}
+
 p {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -83,6 +94,7 @@ p {
 .display-panel-main{
   width: 712px;
   height: 376px;
+  flex-direction: column;
 }
 
 .bottom-panel{
@@ -111,7 +123,13 @@ p {
   height: auto;
 }
 
+/* PHONE LAYOUT */
 @media (max-width: 767px){
+
+  .main-content{
+    padding: 20px;
+  } 
+
   .logo {
     width: 240px;
   }
