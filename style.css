@@ -38,6 +38,15 @@ p {
     background-image: linear-gradient(to bottom, #F2EFE6, #ECE1D1, #E2D3C2);
 
     padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.bottom-panel{
+  height: 56px;
+  background: #6A6461;
+  margin-top: auto;
 }
 
 .logo {
