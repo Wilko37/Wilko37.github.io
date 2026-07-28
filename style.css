@@ -42,25 +42,47 @@ p {
     overflow: hidden;
 }
 
+.main-content{
+  /* grow to fill all remaining height */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 40px;
+}
+
 .logo {
     display: block;
-    margin: 64px auto;
+    margin: 0;
     height: auto;
     width: 360px;
 }
 
 .display-panel{
   display: flex;
-  width: 496px;
-  height: 80px;
-  margin: 0 auto;
 
   /* algin items to perfect center */
   align-items: center;
   justify-content: center;
 
+/* don't overflow on mobile */
+  max-width: 100%;
+
   border-radius: 16px;
   background-image: linear-gradient(to bottom, #151819, #232728, #111314);
+}
+
+/* Welcome pannel */
+.display-panel-title{
+  width: 496px;
+  height: 80px;
+}
+
+.display-panel-main{
+  width: 712px;
+  height: 376px;
 }
 
 .bottom-panel{
