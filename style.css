@@ -11,12 +11,13 @@ body {
 
 h1 {
   font-family: "Montserrat", sans-serif;
+  font-size: 32px;
   font-optical-sizing: auto;
-  letter-spacing: 7px;
-  font-weight: 750;
+  font-weight: 600;
   font-style: normal;
   text-align: center;
-  padding-top: 50px;
+  letter-spacing: 0.25em;
+  color: #F4EEE7;
 }
 
 p {
@@ -36,7 +37,6 @@ p {
     border-radius: 16px;
     background-image: linear-gradient(to bottom, #F2EFE6, #ECE1D1, #E2D3C2);
 
-    padding-top: 64px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -44,9 +44,23 @@ p {
 
 .logo {
     display: block;
-    margin: 0 auto;
+    margin: 64px auto;
     height: auto;
     width: 360px;
+}
+
+.display-panel{
+  display: flex;
+  width: 496px;
+  height: 80px;
+  margin: 0 auto;
+
+  /* algin items to perfect center */
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+  background-image: linear-gradient(to bottom, #151819, #232728, #111314);
 }
 
 .bottom-panel{
