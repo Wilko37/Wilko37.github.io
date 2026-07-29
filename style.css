@@ -122,15 +122,15 @@ p {
   justify-content: center;
   /*allows all columns to shrink when needed*/
   grid-template-columns:
-    minmax(60px, 144px)
-    minmax(0, clamp(712px, 42vw, 850px))
-    minmax(60px, 144px);
+    minmax(60px, clamp(144px, 14vw, 192px))
+    minmax(0, clamp(712px, 42vw, 925px))
+    minmax(60px, clamp(144px, 14vw, 192px));
 
   /*allows gaps to shrink if needed*/
   gap: clamp(16px, 5vw, 133px);
 
   width: 100%;
-  max-width: clamp(1080px, 75vw, 1200px);
+  max-width: clamp(1080px, 75vw, 1440px);
 }
 
 .display-panel-main{
