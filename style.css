@@ -210,10 +210,17 @@ p {
   left: 50%;
   transform: translateX(-50%);
   bottom: 20px;
+  transition: border-color 0.5s ease;
+}
+
+.navigation-button:hover .nav-button-line {
+  border-top-color: rgba(240, 122, 43, 0.75);
 }
 
 .active-button{
-  box-shadow: 0px 0px 20px 8px #E5F593;
+  /* pulse green in and out */
+  animation: greenPulse 2s ease-in-out infinite;
+  pointer-events: none;
 }
 
 .active-button-line {
@@ -301,4 +308,10 @@ p {
     height: 80px;
   }
 
+}
+
+@keyframes greenPulse{
+  0% {box-shadow: 0px 0px 8px 4px #E5F593;}
+  50% {box-shadow: 0px 0px 24px 12px #E5F593;}
+  100%{box-shadow: 0px 0px 8px 4px #E5F593;}
 }
