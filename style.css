@@ -82,8 +82,8 @@ p {
   align-items: center;
   justify-content: space-evenly;
 
-  gap: clamp(40px, 2.78vw, 53px);
-  padding: clamp(32px, 2.22vw, 43px);
+  gap: 40px;
+  padding: 32px;
 }
 
 .logo {
@@ -113,7 +113,7 @@ p {
 /* Welcome pannel */
 .display-panel-title{
   width: clamp(496px, 34.44vw, 661px);
-  height: clamp(80px, 5.56vw, 107px);
+  height: 80px;
 }
 
 .home-middle-section{
@@ -135,13 +135,13 @@ p {
 
 .display-panel-main{
   width: 100%; /*712px as defined in home-middle-section*/
-  max-width: clamp(712px, 49.44vw, 949px);
-  min-height: clamp(376px, 26.11vw, 501px);
+  max-width: none;
+  min-height: 376px;
   height: auto;
 
   flex-direction: column;
-  gap: clamp(28px, 1.94vw, 37px);
-  padding: clamp(40px, 2.78vw, 53px);
+  gap: 28px;
+  padding: 40px;
 }
 
 .home-audio-visual{
@@ -159,7 +159,7 @@ p {
 .navigation-panel{
   width: 100%;
   max-width: clamp(936px, 65vw, 1248px);
-  min-height: clamp(128px, 8.89vw, 171px);
+  min-height: 128px;
   height: auto;
 
   display: flex;
@@ -167,11 +167,8 @@ p {
   align-items: center;
   /*allow items to go underneath if need be*/
   flex-wrap: wrap;
-  gap: clamp(40px, 2.78vw, 53px);
-
-  padding:
-    clamp(16px, 1.11vw, 21px)
-    clamp(40px, 2.78vw, 53px);
+  gap: 40px;
+  padding: 16px 40px;
 
   border-radius: 16px;
   background-image: linear-gradient(to bottom, #DDDBD2, #D0C5B8, #BDB1A3);
@@ -180,7 +177,7 @@ p {
 
 .navigation-button{
   width: clamp(256px, 17.78vw, 341px);
-  height: clamp(96px, 6.67vw, 128px);
+  height: 96px;
   border-radius: 8px;
   background-image: linear-gradient(to bottom, #5D564D, #474239, #2E2A27);
 
@@ -205,7 +202,7 @@ p {
 .nav-button-line {
   border-top: 4px solid #B8AEA3;
   width: clamp(120px, 8.33vw, 160px);
-  bottom: clamp(20px, 1.39vw, 27px);
+  bottom: 20px;
   opacity: 0.8;
   margin: 0;
 
@@ -231,8 +228,8 @@ p {
 
 .bottom-panel{
   display: flex;
-  height: clamp(56px, 3.89vw, 75px);
-  min-height: clamp(56px, 3.89vw, 75px);
+  height: 56px;
+  min-height: 56px;
 
   background: #6A6461;
   margin-top: auto;
