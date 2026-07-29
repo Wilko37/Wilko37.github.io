@@ -122,9 +122,9 @@ p {
   justify-content: center;
   /*allows all columns to shrink when needed*/
   grid-template-columns:
-    minmax(60px, clamp(144px, 14vw, 192px))
-    minmax(0, clamp(712px, 42vw, 925px))
-    minmax(60px, clamp(144px, 14vw, 192px));
+    minmax(60px, clamp(144px, 10vw, 192px))
+    minmax(0, clamp(712px, 49.4vw, 949px))
+    minmax(60px, clamp(144px, 10vw, 192px));
 
   /*allows gaps to shrink if needed*/
   gap: clamp(16px, 5vw, 133px);
