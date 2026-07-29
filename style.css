@@ -41,13 +41,14 @@ h3{
 
 p {
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   text-align: center;
-  color: white;
-  padding-left: 75px;
-  padding-right: 75px;
+  letter-spacing: 0.1em;
+  color: #F4EEE7;
+  margin: 0 0 8px;
 }
 
 .big-button-text{
@@ -112,7 +113,7 @@ p {
 
 /* Welcome pannel */
 .display-panel-title{
-  width: clamp(496px, 34.44vw, 661px);
+  width: clamp(496px, 34.44vw, 660px);
   height: 80px;
 }
 
