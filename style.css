@@ -130,7 +130,7 @@ p {
   gap: clamp(16px, 5vw, 100px);
 
   width: 100%;
-  max-width: 1080px;
+  max-width: clamp(1080px, 75vw, 1200px);
 }
 
 .display-panel-main{
