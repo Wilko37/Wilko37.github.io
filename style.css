@@ -90,7 +90,7 @@ p {
     display: block;
     margin: 0;
     height: auto;
-    width: 360px;
+    width: clamp(360px, 25vw, 440px);
 }
 
 .display-panel{
