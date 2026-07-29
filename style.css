@@ -81,9 +81,9 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 40px;
 
-  padding: 32px;
+  gap: clamp(40px, 2.78vw, 53px);
+  padding: clamp(32px, 2.22vw, 43px);
 }
 
 .logo {
@@ -112,8 +112,8 @@ p {
 
 /* Welcome pannel */
 .display-panel-title{
-  width: 496px;
-  height: 80px;
+  width: clamp(496px, 34.44vw, 661px);
+  height: clamp(80px, 5.56vw, 107px);
 }
 
 .home-middle-section{
@@ -135,32 +135,31 @@ p {
 
 .display-panel-main{
   width: 100%; /*712px as defined in home-middle-section*/
-  max-width: 712px;
-
-  min-height: 376px;
+  max-width: clamp(712px, 49.44vw, 949px);
+  min-height: clamp(376px, 26.11vw, 501px);
   height: auto;
 
   flex-direction: column;
-  gap: 28px;
-  padding: 40px;
+  gap: clamp(28px, 1.94vw, 37px);
+  padding: clamp(40px, 2.78vw, 53px);
 }
 
 .home-audio-visual{
   width: 100%;
-  max-width: 496px;
+  max-width: clamp(496px, 34.44vw, 661px);
   height: auto;
 }
 
 .vent-grill{
-  width:144px;
+  width: clamp(144px, 10vw, 192px);
   max-width: 100%;
   height: auto;
 }
 
 .navigation-panel{
   width: 100%;
-  max-width: 936px;
-  min-height: 128px;
+  max-width: clamp(936px, 65vw, 1248px);
+  min-height: clamp(128px, 8.89vw, 171px);
   height: auto;
 
   display: flex;
@@ -168,8 +167,11 @@ p {
   align-items: center;
   /*allow items to go underneath if need be*/
   flex-wrap: wrap;
-  gap: 40px;
-  padding: 16px 40px;
+  gap: clamp(40px, 2.78vw, 53px);
+
+  padding:
+    clamp(16px, 1.11vw, 21px)
+    clamp(40px, 2.78vw, 53px);
 
   border-radius: 16px;
   background-image: linear-gradient(to bottom, #DDDBD2, #D0C5B8, #BDB1A3);
@@ -177,8 +179,8 @@ p {
 }
 
 .navigation-button{
-  width: 256px;
-  height: 96px;
+  width: clamp(256px, 17.78vw, 341px);
+  height: clamp(96px, 6.67vw, 128px);
   border-radius: 8px;
   background-image: linear-gradient(to bottom, #5D564D, #474239, #2E2A27);
 
@@ -202,14 +204,14 @@ p {
 
 .nav-button-line {
   border-top: 4px solid #B8AEA3;
-  width: 120px;
+  width: clamp(120px, 8.33vw, 160px);
+  bottom: clamp(20px, 1.39vw, 27px);
   opacity: 0.8;
   margin: 0;
 
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 20px;
   transition: border-color 0.5s ease;
 }
 
@@ -229,8 +231,8 @@ p {
 
 .bottom-panel{
   display: flex;
-  height: 56px;
-  min-height: 56px;
+  height: clamp(56px, 3.89vw, 75px);
+  min-height: clamp(56px, 3.89vw, 75px);
 
   background: #6A6461;
   margin-top: auto;
@@ -249,7 +251,7 @@ p {
 }
 
 .screw {
-  width: 32px;
+  width: clamp(32px, 2.22vw, 43px);
   height: auto;
 }
 
