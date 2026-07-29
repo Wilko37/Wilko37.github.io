@@ -123,11 +123,11 @@ p {
   /*allows all columns to shrink when needed*/
   grid-template-columns:
     minmax(60px, 144px)
-    minmax(0, 712px)
+    minmax(0, clamp(712px, 42vw, 850px))
     minmax(60px, 144px);
 
   /*allows gaps to shrink if needed*/
-  gap: clamp(16px, 5vw, 100px);
+  gap: clamp(16px, 5vw, 133px);
 
   width: 100%;
   max-width: clamp(1080px, 75vw, 1200px);
