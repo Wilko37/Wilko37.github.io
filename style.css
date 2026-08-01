@@ -305,7 +305,7 @@ p {
 .media-panel{
   /*keep as a square ratio*/
   width: clamp(140px, 10vw, 204px);
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   border-radius: 16px;
   background-image: linear-gradient(to bottom, #DDDBD2, #D0C5B8, #BDB1A3);
 
@@ -318,6 +318,7 @@ p {
   width: 92px;
   height: 92px;
   border-radius: 6px;
+  aspect-ratio: 1/1;
 
   display: grid;
   align-items: center;
@@ -366,8 +367,11 @@ p {
 
 /* PHONE LAYOUT */
 @media (max-width: 767px){
-  /*HOME PAGE*/
+  .h1 {
+    font-size: 28px;
+  }
 
+  /*HOME PAGE*/
   .nav-button-line {
     bottom: 14px;
   }
@@ -452,7 +456,7 @@ p {
   }
 
   .about-middle-section{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 20px;
   }
 
@@ -463,15 +467,20 @@ p {
   }
 
   .media-panel{
-    width: 140px;
+    max-width: 140px;
+    width: 100%;
     justify-self: center;
   }
 
+  .media-button{
+    max-width: 92px;
+    width: 100%;
+  }
 
 }
 
 @keyframes greenPulse{
   0% {box-shadow: 0px 0px 8px 4px #E5F593;}
-  50% {box-shadow: 0px 0px 24px 12px #E5F593;}
+  50% {box-shadow: 0px 0px 20px 16px #E5F593;}
   100%{box-shadow: 0px 0px 8px 4px #E5F593;}
 }
