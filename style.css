@@ -101,7 +101,6 @@ p {
   align-items: center;
   justify-content: center;
 
-/* don't overflow on mobile */
   max-width: 100%;
 
   border-radius: 16px;
@@ -157,6 +156,12 @@ p {
   height: auto;
 }
 
+.panel{
+  border-radius: 16px;
+  background-image: linear-gradient(to bottom, #DDDBD2, #D0C5B8, #BDB1A3);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .navigation-panel{
   width: 100%;
   max-width: clamp(936px, 65vw, 1248px);
@@ -170,10 +175,6 @@ p {
   flex-wrap: wrap;
   gap: 40px;
   padding: 16px 40px;
-
-  border-radius: 16px;
-  background-image: linear-gradient(to bottom, #DDDBD2, #D0C5B8, #BDB1A3);
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .navigation-button{
@@ -325,7 +326,7 @@ p {
   justify-content: center;
 
   background-image: linear-gradient(to bottom, #BF6838, #D9824A);
-  outline: 1px solid #1B1B19;
+  /*outline: 1px solid #1B1B19;*/
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
@@ -364,6 +365,110 @@ p {
   width: 100%;
   max-width: clamp(1080px, 75vw, 1440px);
 }
+
+/* BEAT PLAYER */
+.beat-player-grid {
+  display: grid;
+  width: 100%;
+  max-width: clamp(1080px, 75vw, 1440px);
+
+  align-items: center;
+  justify-content: center;
+  /*allows all columns to shrink when needed*/
+  grid-template-columns:
+    minmax(0, clamp(140px, 10vw, 204px))
+    minmax(0, clamp(600px, 45vw, 850px))
+    minmax(0, clamp(220px, 16vw, 300px));
+
+  /*allows gaps to shrink if needed*/
+  gap: clamp(16px, 5vw, 133px);
+}
+
+.player-section{
+  display: flex;
+  /*background-color: red;*/
+  min-width: 0;
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.display-panel-beat{
+  width: clamp(504px, 35vw, 670px);
+  height: 136px;
+}
+
+.pad-panel{
+  display: grid;
+  width: clamp(504px, 35vw, 670px);
+  max-width: 100%;
+  min-height: 432px;
+  height: auto;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 24px;
+  padding: 24px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.pad{
+  position: relative;
+  background-image: linear-gradient(to bottom, #5D564D, #474239, #2E2A27);
+  border-radius: 4px;
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 1.12/1;
+
+  display: grid;
+  place-items: center;
+
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.pad:hover{
+  transform: scale(1.05);
+}
+
+.pad-number {
+  position: absolute;
+  top: 12%;
+  left: 12%;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #F4EEE7;
+}
+
+.pad-name {
+  position: absolute;
+  top: 55%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #F4EEE7;
+  letter-spacing: 0.1em
+}
+
+.pad-line{
+  position: absolute;
+  bottom: 15%;
+
+  width: 32px;
+  height: 4px;
+  background-color: #B8AEA3;
+}
+
 
 /* PHONE LAYOUT */
 @media (max-width: 767px){
