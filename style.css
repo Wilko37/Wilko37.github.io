@@ -302,10 +302,42 @@ p {
 }
 
 .media-panel{
-  width: clamp(128px, 8.9vw, 170px);
-  height: 304px;
+  min-width: 140px;
+  min-height: 140px;
   border-radius: 16px;
   background-image: linear-gradient(to bottom, #DDDBD2, #D0C5B8, #BDB1A3);
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-button{
+  width: 92px;
+  height: 92px;
+  border-radius: 6px;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  background-image: linear-gradient(to bottom, #BF6838, #D9824A);
+  outline: 1px solid #1B1B19;
+
+}
+
+.media-button-alt{
+  background-image: linear-gradient(to bottom, #8FAFC1, #6F94A9, #55798E);
+}
+
+.soundcloud-icon{
+  width: 58px;
+  height: auto;
+}
+
+.email-icon{
+  width: 51px;
+  height: auto;
 }
 
 .about-middle-section{
@@ -314,9 +346,9 @@ p {
   justify-content: center;
   /*allows all columns to shrink when needed*/
   grid-template-columns:
-    minmax(0, clamp(128px, 10vw, 192px))
+    minmax(0, clamp(140px, 10vw, 204px))
     minmax(0, clamp(712px, 49.4vw, 949px))
-    minmax(0, clamp(128px, 10vw, 192px));
+    minmax(0, clamp(140px, 10vw, 204px));
 
   /*allows gaps to shrink if needed*/
   gap: clamp(16px, 5vw, 133px);
