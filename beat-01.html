@@ -15,13 +15,7 @@
         <main class="main-shell">
             <div class="main-content">
                 <img class="logo" src="images/Logo.png" alt="WILKO">
-
-                <div class="beat-player-grid">
-                    <div class="player-section"></div>
-
-                    <!--MIDDLE-->
-                    <div class="player-section">
-                        <div class="display-panel display-panel-beat">
+                <div class="display-panel display-panel-beat">
 
                             <div class="beat-info">
                                 <h4 class="white-text">#01</h4>
@@ -41,6 +35,32 @@
                                 </div>
                             </div>
                         </div>
+
+                <div class="beat-player-grid">
+                    <div class="player-section player-section-left">
+                        <div class="panel beat-player-panel">
+                            <h4>SWITCH BEAT</h4>
+
+                            <div class="beat-player-buttons">
+
+                                <a class="h-b player-button switch-button" href="beat-01.html">
+                                <span class="switch-button-text">PREV<br>BEAT</span>
+                                <img class="switch-button-img" src="images/left-arrow.png" alt="Previous beat"
+                                >
+                                </a>
+                                <a class="h-b player-button switch-button" href="beat-01.html">
+                                <span class="switch-button-text">NEXT<br>BEAT</span>
+                                <img class="switch-button-img" src="images/right-arrow.png"alt="Next beat"
+                                >
+                                </a>
+                            </div>
+                        </div>
+                        <img class="vent-grill" src="images/Vent-Grill.png" alt="vent grill">
+                    </div>
+
+                    <!--MIDDLE-->
+                    <div class="player-section">
+                        
                         <div class="panel pad-panel">
                             <div class="h-b hover-lightup pad">
                                 <span class="pad-number">1</span>
@@ -90,9 +110,9 @@
                         </div>
                     </div>
                     <div class="player-section">
-                        <div class="playback-panel">
+                        <div class="panel beat-player-panel">
                             <h4>PLAYBACK</h4>
-                            <div class="playback-buttons">
+                            <div class="beat-player-buttons">
                                 <div class="h-b player-button">
                                     <img class="player-button-img" src="images/play-button.png" alt="play button">
                                 </div>
@@ -100,7 +120,11 @@
                                     <img class="player-button-img" src="images/pause-button.png" alt="pause button">
                                 </div>
                             </div>
-                        </div>  
+                        </div>
+                        <div class="h-b info-button">
+                            <h5 class="info-button-title">INFO</h5>
+                            <img class="info-button-image" src="images/info-icon.png" alt="info icon">
+                        </div>
                     </div>
                 </div>
 

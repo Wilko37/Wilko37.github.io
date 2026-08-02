@@ -45,7 +45,7 @@ h4{
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.25em;
   color: #1B1B19;
   margin: 0 0 8px;
@@ -55,7 +55,7 @@ h5 {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   text-align: center;
   letter-spacing: 0.25em;
@@ -67,7 +67,7 @@ h6 {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   text-align: center;
   letter-spacing: 0.25em;
@@ -106,6 +106,11 @@ p {
 
 .beat-01-title{
   color: #FF7B53;
+}
+
+.info-button-title{
+  color: #1B1B19;
+  margin: 0;
 }
 
 /**Hoverable button*/
@@ -369,7 +374,6 @@ p {
   width: 92px;
   height: 92px;
   border-radius: 6px;
-  aspect-ratio: 1/1;
 
   display: grid;
   align-items: center;
@@ -422,7 +426,7 @@ p {
   justify-content: center;
   /*allows all columns to shrink when needed*/
   grid-template-columns:
-    minmax(0, clamp(140px, 10vw, 204px))
+    minmax(0, clamp(234px, 16.25vw, 312px))
     minmax(0, clamp(600px, 45vw, 850px))
     minmax(0, clamp(234px, 16.25vw, 312px));
 
@@ -432,13 +436,18 @@ p {
 
 .player-section{
   display: flex;
-  /*background-color: red;*/
   min-width: 0;
-  min-height: 300px;
-  justify-content: center;
+  height: 100%;
+  min-height: 432px;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   gap: 32px;
+}
+
+.player-section-left{
+  justify-content: space-evenly;
+  align-self: stretch;
 }
 
 .display-panel-beat{
@@ -572,7 +581,7 @@ p {
   background-color: #B8AEA3;
 }
 
-.playback-panel{
+.beat-player-panel{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -580,9 +589,10 @@ p {
 
   justify-content: flex-start;
   gap: 8px;
+  padding: 20px;
 }
 
-.playback-buttons{
+.beat-player-buttons{
   display: flex;
   justify-content: space-between;
   gap: 24px;
@@ -603,6 +613,17 @@ p {
   align-items: center;
 }
 
+.switch-button {
+  aspect-ratio: auto;
+  height: 128px;
+
+  flex-direction: column;
+  gap: 16px;
+
+  color: #1B1B19;
+  text-decoration: none;
+}
+
 .player-button-img{
   display: block;
   width: 40%;
@@ -611,9 +632,49 @@ p {
   object-fit: contain;
 }
 
+.switch-button-img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.switch-button-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .pad:hover .pad-line {
   border-top-color: rgba(240, 122, 43, 0.75);
 }
+
+.info-button{
+  width: 144px;
+  height: 80px;
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background-image: linear-gradient(to bottom, #8FAFC1, #6F94A9, #55798E);
+  outline: 1px solid #1B1B19;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info-button-img {
+  display: block;
+  width: 94px;
+  height: auto;
+  object-fit: contain;
+}
+
 
 
 /* PHONE LAYOUT */
