@@ -76,6 +76,16 @@ p {
   line-height: 1;
 }
 
+/**Hoverable button*/
+.h-b{
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.h-b:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
 .main-shell{
     width: 100%;
     min-height: calc(100vh - 32px);
@@ -204,13 +214,9 @@ p {
   /*remove hyperlink styling*/
   color: inherit;
   text-decoration: none;
-
-  /*smooth enlarge for hover*/
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.navigation-button:hover{
-  transform: scale(1.05);
+.hover-lightup:hover{
   box-shadow: 0px 0px 20px 8px rgba(240, 122, 43, 0.8);
 }
 
@@ -233,7 +239,7 @@ p {
 
 .active-button{
   /* pulse green in and out */
-  animation: greenPulse 2s ease-in-out infinite;
+  animation: greenPulseLarge 2s ease-in-out infinite;
   pointer-events: none;
 }
 
@@ -336,15 +342,11 @@ p {
   display: grid;
   align-items: center;
   justify-content: center;
+  object-fit: contain;
 
   background-image: linear-gradient(to bottom, #BF6838, #D9824A);
-  /*outline: 1px solid #1B1B19;*/
+  outline: 1px solid #1B1B19;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.media-button:hover{
-  transform: scale(1.05);
 }
 
 .media-button-alt{
@@ -390,10 +392,10 @@ p {
   grid-template-columns:
     minmax(0, clamp(140px, 10vw, 204px))
     minmax(0, clamp(600px, 45vw, 850px))
-    minmax(0, clamp(220px, 16vw, 300px));
+    minmax(0, clamp(234px, 16.25vw, 312px));
 
   /*allows gaps to shrink if needed*/
-  gap: clamp(16px, 5vw, 133px);
+  gap: clamp(8px, 5vw, 133px);
 }
 
 .player-section{
@@ -439,11 +441,12 @@ p {
   display: grid;
   place-items: center;
 
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.pad:hover{
-  transform: scale(1.05);
+.pad-active{
+  /* pulse green in and out */
+  animation: greenPulseSmall 2s ease-in-out infinite;
+
 }
 
 .pad-number {
@@ -481,11 +484,54 @@ p {
   background-color: #B8AEA3;
 }
 
+.playback-panel{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 0;
+
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.playback-buttons{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.player-button {
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 1.86/1;
+
+  border-radius: 4px;
+  background-image: linear-gradient(to right, #DACDBD, #CCC7BD);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  outline: 1px solid #1B1B19;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-button-img{
+  display: block;
+  width: 40%;
+  height: auto;
+  max-height: 60%;
+  object-fit: contain;
+}
+
+.pad:hover .pad-line {
+  border-top-color: rgba(240, 122, 43, 0.75);
+}
+
 
 /* PHONE LAYOUT */
 @media (max-width: 767px){
   .h1 {
-    font-size: 28px;
+    font-size: 16px;
   }
 
   /*HOME PAGE*/
@@ -596,8 +642,15 @@ p {
 
 }
 
-@keyframes greenPulse{
+@keyframes greenPulseLarge{
   0% {box-shadow: 0px 0px 8px 4px #E5F593;}
   50% {box-shadow: 0px 0px 20px 16px #E5F593;}
   100%{box-shadow: 0px 0px 8px 4px #E5F593;}
 }
+
+@keyframes greenPulseSmall{
+  0% {box-shadow: 0px 0px 8px 4px #E5F593;}
+  50% {box-shadow: 0px 0px 20px 12px #E5F593;}
+  100%{box-shadow: 0px 0px 8px 4px #E5F593;}
+}
+

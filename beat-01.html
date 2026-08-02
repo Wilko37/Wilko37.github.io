@@ -23,74 +23,84 @@
                     <div class="player-section">
                         <div class="display-panel display-panel-beat"></div>
                         <div class="panel pad-panel">
-                            <div class="pad">
+                            <div class="h-b hover-lightup pad">
                                 <span class="pad-number">1</span>
-                                <span class="pad-name">KICK</span>
+                                <span class="pad-name">MELODY</span>
                                 <div class="pad-line"></div>
                             </div>
-                            <div class="pad">
+                            <div class="h-b hover-lightup pad">
                                 <span class="pad-number">2</span>
                                 <span class="pad-name">SNARE</span>
                                 <div class="pad-line"></div>
                             </div>
-                            <div class="pad">
+                            <div class="h-b hover-lightup pad">
                                 <span class="pad-number">3</span>
+                                <span class="pad-name">KICK</span>
+                                <div class="pad-line"></div>
+                            </div>
+                            <div class="h-b hover-lightup pad">
+                                <span class="pad-number">4</span>
                                 <span class="pad-name">HI HAT</span>
                                 <div class="pad-line"></div>
                             </div>
-                            <div class="pad">
-                                <span class="pad-number">4</span>
+                            <div class="h-b hover-lightup pad">
+                                <span class="pad-number">5</span>
                                 <span class="pad-name">OPEN HAT</span>
                                 <div class="pad-line"></div>
                             </div>
-                            <div class="pad">
-                                <span class="pad-number">5</span>
-                                <span class="pad-name">808</span>
-                                <div class="pad-line"></div>
-                            </div>
-                            <div class="pad">
+                            <div class="h-b hover-lightup pad">
                                 <span class="pad-number">6</span>
-                                <span class="pad-name">CHORDS</span>
+                                <span class="pad-name">SHAKER</span>
                                 <div class="pad-line"></div>
                             </div>
-                            <div class="pad">
+                            <div class="h-b hover-lightup pad">
                                 <span class="pad-number">7</span>
-                                <span class="pad-name">MELODY</span>
-                                <div class="pad-line"></div>
-                            </div>
-                            <div class="pad">
-                                <span class="pad-number">8</span>
                                 <span class="pad-name">CLAP</span>
                                 <div class="pad-line"></div>
                             </div>
-                            <div class="pad">
-                                <span class="pad-number">9</span>
+                            <div class="h-b hover-lightup pad">
+                                <span class="pad-number">8</span>
                                 <span class="pad-name">RIM</span>
+                                <div class="pad-line"></div>
+                            </div>
+                            <div class="h-b hover-lightup pad">
+                                <span class="pad-number">9</span>
+                                <span class="pad-name">808</span>
                                 <div class="pad-line"></div>
                             </div>
                         </div>
                     </div>
                     <div class="player-section">
-                        <h4>PLAYBACK</h4>
+                        <div class="playback-panel">
+                            <h4>PLAYBACK</h4>
+                            <div class="playback-buttons">
+                                <div class="h-b player-button">
+                                    <img class="player-button-img" src="images/play-button.png" alt="play button">
+                                </div>
+                                <div class="h-b player-button">
+                                    <img class="player-button-img" src="images/pause-button.png" alt="pause button">
+                                </div>
+                            </div>
+                        </div>  
                     </div>
                 </div>
 
             <div class="panel navigation-panel">
 
             <!--HOME BUTTON-->
-            <a class = "navigation-button" href="index.html">
+            <a class = "h-b hover-lightup navigation-button" href="index.html">
               <span class="big-button-text">HOME</span>
               <div class="nav-button-line"></div>
             </a>
 
             <!--BEATS BUTTON-->
-            <a class = "navigation-button active-button" href="beat-01.html">
+            <a class = "h-b navigation-button active-button" href="beat-01.html">
               <span class="big-button-text">BEATS</span>
               <div class="nav-button-line active-button-line"></div>
             </a>
 
             <!--ABOUT BUTTON-->
-            <a class = "navigation-button" href="about.html">
+            <a class = "h-b hover-lightup navigation-button" href="about.html">
               <span class="big-button-text">ABOUT</span>
               <div class="nav-button-line"></div>
             </a>
@@ -103,6 +113,20 @@
         </div>
       </div>
         </main>
-        <script src="script.js"></script>
+        <script>
+            window.STEM_FILES = [
+                'audio/beat-01/melody.mp3',
+                'audio/beat-01/snare.mp3',
+                'audio/beat-01/kick.mp3',
+                'audio/beat-01/hi-hat.mp3',
+                'audio/beat-01/open-hat.mp3',
+                'audio/beat-01/shaker.mp3',
+                'audio/beat-01/clap.mp3',
+                'audio/beat-01/rim.mp3',
+                'audio/beat-01/808.mp3',
+            ]
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+        <script src="beat-player.js"></script>
     </body>
 </html>
