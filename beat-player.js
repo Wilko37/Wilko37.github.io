@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // assign playback buttons to have js scripts
-    const buttons = document.querySelectorAll('.playback-buttons .player-button');
+    const buttons = document.querySelectorAll('.player-section-right .player-button');
     const playBtn = buttons[0];
     const pauseBtn = buttons[1];
 
