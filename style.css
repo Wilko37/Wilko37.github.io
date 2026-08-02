@@ -847,11 +847,11 @@ p {
   }
 
   .player-section-left .beat-player-panel {
-    order: 3;
+    order: 4;
   }
 
   .player-section-right .info-button {
-    order: 4;
+    order: 3;
   }
 
   .player-section-left .vent-grill {
