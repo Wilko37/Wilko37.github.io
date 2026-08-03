@@ -613,6 +613,10 @@ p {
   width: 32px;
   height: 4px;
   background-color: #B8AEA3;
+
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .beat-player-panel{
@@ -682,8 +686,13 @@ p {
   text-align: center;
 }
 
-.pad:hover .pad-line {
-  border-top-color: rgba(240, 122, 43, 0.75);
+/* dont go orange on hover on an active pad */
+.pad:not(.pad-active):hover .pad-line{
+  background-color: rgba(240, 122, 43, 0.75);
+}
+
+.pad-active .pad-line {
+  background-color: #DDE6B0;
 }
 
 .info-button{
