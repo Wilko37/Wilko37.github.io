@@ -86,6 +86,7 @@ p {
   letter-spacing: 0.1em;
   color: #F4EEE7;
   margin: 0 0 8px;
+  line-height: 1.7;
 }
 
 .big-button-text{
@@ -107,6 +108,10 @@ p {
 
 .beat-01-title{
   color: #FF7B53;
+}
+
+.beat-02-title{
+  color: #60FF8A;
 }
 
 .info-button-title{
@@ -470,7 +475,7 @@ p {
   background-image:
     linear-gradient(
       rgba(21, 24, 25, 0.5)),
-      url("images/background-01.jpg");
+      url("images/background-01.WEBP");
 
   background-size: cover;
   background-position: center;
@@ -481,6 +486,14 @@ p {
   align-items: center;
   padding: 20px 32px;
   column-gap: 32px;
+}
+
+.beat-02{
+  /* background image */
+  background-image:
+    linear-gradient(
+      rgba(21, 24, 25, 0.5)),
+      url("images/background-02.WEBP");
 }
 
 .beat-info {
@@ -733,6 +746,12 @@ p {
     height: auto;
     margin: 0 auto;
     border-radius: 8px;
+}
+
+.accordion-link {
+  color: #8FAFC1;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* PHONE LAYOUT */
