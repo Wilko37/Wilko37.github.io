@@ -25,6 +25,7 @@ h1 {
   text-align: center;
   letter-spacing: 0.25em;
   color: #F4EEE7;
+  overflow-wrap: anywhere;
 }
 
 h3{
@@ -79,7 +80,7 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 5400;
   font-style: normal;
   text-align: center;
   letter-spacing: 0.1em;
@@ -720,12 +721,23 @@ p {
   padding: 24px;
   border-radius: 16px;
   background-image: linear-gradient(to bottom, #151819, #232728, #111314);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 /* PHONE LAYOUT */
 @media (max-width: 767px){
-  .h1 {
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
     font-size: 16px;
+  }
+
+  p {
+    font-size: 10px;
   }
 
   /*HOME PAGE*/
@@ -823,16 +835,32 @@ p {
     min-width: 0;
   }
 
-  .media-panel{
-    max-width: 140px;
-    width: 100%;
-    justify-self: center;
-  }
+  .media-panel {
+        width: 110px;
+        max-width: 110px;
+        aspect-ratio: 1 / 1;
+        justify-self: center;
+        place-items: center;
+    }
 
-  .media-button{
-    max-width: 92px;
-    width: 100%;
-  }
+    .media-button {
+        width: 74px;
+        height: 74px;
+        max-width: none;
+        place-items: center;
+    }
+
+    .soundcloud-icon {
+        width: 58px;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .email-icon {
+        width: 51px;
+        max-width: 70%;
+        height: auto;
+    }
 
   /* BEAT PLAYER*/
   .beat-player-grid {
@@ -876,6 +904,29 @@ p {
     gap: clamp(12px, 1vw, 24px);
   }
 
+  .info-button{
+    width: clamp(108px, 18vw, 144px);
+    height: auto;
+    aspect-ratio: 144 / 80;
+    border-radius: 6px;
+  }
+
+  .info-button-title {
+    font-size: 13px;
+  }
+
+  .circle-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .accordion-content{
+    margin: 0 12px;
+    padding: 12px;
+    gap: 24px;
+
+  }
+
   /* CUSTOM ORDERING FOR MOBILE */
   .player-section-left,
   .player-section-right {
@@ -892,15 +943,15 @@ p {
   }
 
   .player-section-left .beat-player-panel {
-    order: 4;
-  }
-
-  .player-section-right .info-button {
     order: 3;
   }
 
+  .player-section-right .beat-player-buttons {
+    order: 6;
+  }
+
   .player-section-left .vent-grill {
-    order: 5;
+    order: 4;
   }
 
   
