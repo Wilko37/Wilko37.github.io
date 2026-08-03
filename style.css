@@ -726,6 +726,15 @@ p {
   gap: 32px;
 }
 
+.accordion-image {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
 /* PHONE LAYOUT */
 @media (max-width: 767px){
   h1 {
