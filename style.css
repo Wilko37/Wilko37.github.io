@@ -114,6 +114,10 @@ p {
   color: #60FF8A;
 }
 
+.beat-03-title{
+  color: #BA60FF;
+}
+
 .info-button-title{
   color: #1B1B19;
   margin: 0;
@@ -475,7 +479,7 @@ p {
   background-image:
     linear-gradient(
       rgba(21, 24, 25, 0.5)),
-      url("images/background-01.WEBP");
+      url("images/background-01.JPG");
 
   background-size: cover;
   background-position: center;
@@ -493,7 +497,15 @@ p {
   background-image:
     linear-gradient(
       rgba(21, 24, 25, 0.5)),
-      url("images/background-02.WEBP");
+      url("images/background-02.JPG");
+}
+
+.beat-03{
+  /* background image */
+  background-image:
+    linear-gradient(
+      rgba(21, 24, 25, 0.5)),
+      url("images/background-03.JPG");
 }
 
 .beat-info {

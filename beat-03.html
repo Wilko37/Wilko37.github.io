@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - PYREX</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <main class="main-shell">
+            <div class="main-content">
+                <img class="logo" src="images/Logo.png" alt="WILKO">
+                <div class="display-panel display-panel-beat beat-03">
+
+                            <div class="beat-info">
+                                <h4 class="white-text">#03</h4>
+                                <h4 class="beat-03-title">PYREX</h4>
+                            </div>
+
+                            <div class="beat-divider"></div>
+
+                            <div class="beat-details">
+                                <div class="beat-detail">
+                                    <h5>BPM</h5>
+                                    <h6>140</h6>
+                                </div>
+                                <div class="beat-detail">
+                                    <h5>KEY</h5>
+                                    <h6>G MINOR</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                <div class="beat-player-grid">
+                    <div class="player-section player-section-left">
+                        <div class="panel beat-player-panel">
+                            <h4>SWITCH BEAT</h4>
+
+                            <div class="beat-player-buttons">
+
+                                <a class="h-b player-button switch-button" href="beat-02.html">
+                                <span class="switch-button-text">PREV<br>BEAT</span>
+                                <img class="switch-button-img" src="images/left-arrow.png" alt="Previous beat"
+                                >
+                                </a>
+                                <a class="h-b player-button switch-button" href="beat-01.html">
+                                <span class="switch-button-text">NEXT<br>BEAT</span>
+                                <img class="switch-button-img" src="images/right-arrow.png"alt="Next beat"
+                                >
+                                </a>
+                            </div>
+                        </div>
+                        <img class="vent-grill" src="images/Vent-Grill.png" alt="vent grill">
+                    </div>
+
+                    <!--MIDDLE-->
+                    <div class="player-section player-section-middle">
+                        
+                        <div class="panel pad-panel">
+                            <div class="h-b hover-lightup pad">
+                                <span class="pad-number">1</span>
+                                <span class="pad-name">LEAD 1</span>
+                                <div class="pad-line"></div>
+                            </div>
+                            <div class="h-b hover-lightup pad">
+                                <span class="pad-number">2</span>
+                                <span class="pad-name">LEAD 2</span>
+                                <div class="pad-line"></div>
+                            </div>
+                            <div class="h-b hover-lightup pad">
+                                <span class="pad-number">3</span>
+                                <span class="pad-name">CHORDS</span>
+                                <div class="pad-line"></div>
+                            </div>
+                            <div class="h-b hover-lightup pad">
+                                <span class="pad-number">4</span>
+                                <span class="pad-name">ORGAN</span>
+                                <div class="pad-line"></div>
+                            </div>
+                            <div class="h-b hover-lightup pad">
+                                <span class="pad-number">5</span>
+                                <span class="pad-name">KICK</span>
+                                <div class="pad-line"></div>
+                            </div>
+                            <div class="h-b hover-lightup pad">
+                                <span class="pad-number">6</span>
+                                <span class="pad-name">HI HAT</span>
+                                <div class="pad-line"></div>
+                            </div>
+                            <div class="h-b hover-lightup pad">
+                                <span class="pad-number">7</span>
+                                <span class="pad-name">SNARE</span>
+                                <div class="pad-line"></div>
+                            </div>
+                            <div class="h-b hover-lightup pad">
+                                <span class="pad-number">8</span>
+                                <span class="pad-name">PERCS</span>
+                                <div class="pad-line"></div>
+                            </div>
+                            <div class="h-b hover-lightup pad">
+                                <span class="pad-number">9</span>
+                                <span class="pad-name">BASS</span>
+                                <div class="pad-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--RIGHT-->
+                    <div class="player-section player-section-right">
+                        <div class="panel beat-player-panel">
+                            <h4>PLAYBACK</h4>
+                            <div class="beat-player-buttons">
+                                <div class="h-b player-button">
+                                    <img class="player-button-img" src="images/play-button.png" alt="play button">
+                                </div>
+                                <div class="h-b player-button">
+                                    <img class="player-button-img" src="images/pause-button.png" alt="pause button">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="beat-player-buttons">
+                            <div class="h-b info-button info-button-alt" id="beat-info-button">
+                                <h5 class="circle-icon info-button-title">i</h5>
+                            </div>
+                            <div class="h-b info-button" id="how-to-button">
+                                <h5 class="circle-icon info-button-title">?</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--BEAT INFO ACCORDION-->
+                <div class="accordion-container">
+                    <div class="accordion-panel" id="beat-info-accordion">
+                        <div class="accordion-shell panel">
+                            <div class="screw-row accordion-screw-row">
+                                <img class="screw" src="images/Screw.png" alt="">
+                                <img class="screw" src="images/Screw.png" alt="">
+                            </div>
+
+                        <div class="accordion-content">
+                            <h1 class="beat-03-title">PYREX</h1>
+                            <p>THIS BEAT WAS INSPIRED BY AND HEAVILY USES THE KONKAT 8 PLAYER VST</p>
+                            <p>ALL THE LEADS, THE BASS AND THE CHORDS WERE MADE/PRESETS IN KONKAT 8</p>
+                            <p>I WAS ALSO MESSING AROUND WITH THE D RICH DRUM KIT, A VERY FAMOUS MODERN TRAP KIT</p>
+                            <p>MOST OF THE DRUMS ARE FROM THIS KIT </p>
+                            <p>THE ASSOCIATED IMAGE IS PHILIP ISLAND ON A VERY WINDY DAY PHOTOGRAPHED BY ME</p>
+                            <p>I FELT LIKE THE AMOUNT OF DIFFERENT ELEMENTS THAT WENT INTO THE LEAD + CHORD RESEMBLED WAVES CRASHING INTO EACH OTHER, YET IT’S SOMEHOW BEAUTIFUL, JUST LIKE THE PHOTO</p>
+                            <p>HERE ARE THE MIDI PATTERNS FOR THE STEMS:</p>
+                            <img class="accordion-image" src="images/beat-03-stems.png" alt="sc of midi layout for the stems">
+                        </div>
+                        <div class="screw-row accordion-screw-row">
+                                <img class="screw" src="images/Screw.png" alt="">
+                                <img class="screw" src="images/Screw.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--HOW TO ACCORDION-->
+                    <div class="accordion-panel" id="how-to-accordion">
+                        <div class="accordion-shell panel">
+                            <div class="screw-row accordion-screw-row">
+                                <img class="screw" src="images/Screw.png" alt="">
+                                <img class="screw" src="images/Screw.png" alt="">
+                            </div>
+
+                        <div class="accordion-content">
+                            <h1>BEAT PLAYER INSTRUCTIONS</h1>
+                            <p>THIS SITE CONTAINS AN INTERACTIVE SELECTION OF 8 BAR LOOPS OF MY FREE LOOPS</p>
+                            <p>CYCLE THROUGH EACH BEAT USING THE SWITCH BEAT PANEL</p>
+                            <p>TO START, CLICK THE PLAY BUTTON</p>
+                            <p>THEN, CLICK ON WHICH PADS YOU WOULD LIKE TO HEAR. THEY WILL BE SHOWN GREEN WHEN ACTIVE</p>
+                            <p>YOU CAN TOGGLE ANY PADS ON OR OFF TO CREATE YOUR OWN CUSTOM LOOP</p>
+                            <p>CLICK THE INFO BUTTON TO DISCOVER A STORY FOR EACH BEAT</p>
+                            <p>CLICK THE PAUSE BUTTON TO STOP THE AUDIO</p>
+                            <p>CLICK THE PLAY BUTTON TO RESTART AND PLAY THE LOOP</p>
+                            <p>THANKYOU</p>
+                        </div>
+                        <div class="screw-row accordion-screw-row">
+                                <img class="screw" src="images/Screw.png" alt="">
+                                <img class="screw" src="images/Screw.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="panel navigation-panel">
+
+            <!--HOME BUTTON-->
+            <a class = "h-b hover-lightup navigation-button" href="index.html">
+              <span class="big-button-text">HOME</span>
+              <div class="nav-button-line"></div>
+            </a>
+
+            <!--BEATS BUTTON-->
+            <a class = "h-b navigation-button active-button" href="beat-01.html">
+              <span class="big-button-text">BEATS</span>
+              <div class="nav-button-line active-button-line"></div>
+            </a>
+
+            <!--ABOUT BUTTON-->
+            <a class = "h-b hover-lightup navigation-button" href="about.html">
+              <span class="big-button-text">ABOUT</span>
+              <div class="nav-button-line"></div>
+            </a>
+            </div>  
+            </div>
+      <div class="bottom-panel">
+        <div class="screw-row">
+          <img class="screw" src="images/Screw.png" alt="screw">
+          <img class="screw" src="images/Screw.png" alt="screw">
+        </div>
+      </div>
+        </main>
+        <script>
+            window.STEM_FILES = [
+                'audio/beat-03/lead-1.mp3',
+                'audio/beat-03/lead-2.mp3',
+                'audio/beat-03/chords.mp3',
+                'audio/beat-03/organ.mp3',
+                'audio/beat-03/kick.mp3',
+                'audio/beat-03/hi-hat.mp3',
+                'audio/beat-03/snare.mp3',
+                'audio/beat-03/percs.mp3',
+                'audio/beat-03/bass.mp3',
+            ]
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+        <script src="beat-player.js"></script>
+        <script src="accordion.js"></script>
+    </body>
+</html>
