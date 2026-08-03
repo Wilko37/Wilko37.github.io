@@ -479,7 +479,7 @@ p {
   background-image:
     linear-gradient(
       rgba(21, 24, 25, 0.5)),
-      url("images/background-01.JPG");
+      url("images/background-01.jpg");
 
   background-size: cover;
   background-position: center;
@@ -497,7 +497,7 @@ p {
   background-image:
     linear-gradient(
       rgba(21, 24, 25, 0.5)),
-      url("images/background-02.JPG");
+      url("images/background-02.jpg");
 }
 
 .beat-03{
@@ -505,7 +505,7 @@ p {
   background-image:
     linear-gradient(
       rgba(21, 24, 25, 0.5)),
-      url("images/background-03.JPG");
+      url("images/background-03.jpg");
 }
 
 .beat-info {
